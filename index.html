@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM-vänliga recept</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Meny-knapp (hamburger) -->
+        <button id="menu-btn" aria-label="Meny">&#9776;</button>
+
+        <!-- Titel -->
+        <div class="title">
+            <h1>MM-vänliga recept</h1>
+            <p class="tagline">Som uppskattas av hela familjen, både stora och små</p>
+        </div>
+    </header>
+
+    <!-- Dropdown-meny (döljs tills man klickar på knappen) -->
+   <nav id="menu" class="hidden">
+      <ul>
+        <li><a href="#frukost">Frukost</a></li>
+        <li><a href="#lunch">Lunch</a></li>
+        <li><a href="#middag">Middag</a></li>
+        <li><a href="#fika">Fika</a></li>
+        <li><a href="#dryck">Dryck</a></li>
+      </ul>
+   </nav>
+
+
+    <!-- MAIN -->
+    <main id="recept">
+        <!-- Bildspel -->
+        <section id="slideshow">
+            <h2>Inspiration</h2>
+            <div class="slideshow-container">
+                <img src="img/Bild1.jpg" alt="Recept 1">
+                <img src="img/Bild2.jpg" alt="Recept 2">
+            </div>
+        </section>
+
+        <!-- Fritt från -->
+        <section id="frittfran">
+          <h2>Fritt från</h2>
+          <div class="frittfran-grid">
+            <div>Ägg</div>
+            <div>Gluten</div>
+            <div>Mejeri</div>
+            <div>Soja</div>
+            <div>Vinäger</div>
+            <div>Koffein</div>
+            <div>Majs</div>
+            <div>Fläsk</div>
+            <div>Rapsolja</div>
+            <div>Odlad fisk</div>
+            <div>Konstgjorda smakämnen</div>
+            <div>Konstgjorda sötningsmedel</div>
+            <div>Citronsyra</div>
+          </div>  
+        </section>
+
+        <!-- Receptkategorier -->
+        <section id="frukost">
+          <h2>Frukost</h2>
+
+          <div class="recept-card">
+            <img src="img/frukost1.jpg" alt="Heavy Metal Detox Smoothie">
+            <h3>Heavy Metal Detox Smoothie</h3>
+
+            <h4>Ingredienser:</h4>
+            <ul>
+              <li>2 bananer</li>
+              <li>4,8 dl vilda blåbär</li>
+              <li>2,4 dl färsk koriander</li>
+              <li>2,4 dl apelsinjuice</li>
+              <li>1 tsk korngräsjuicepulver</li>
+              <li>1 tsk spirulina</li>
+              <li>1 liten näve dulse från Atlanten, eller en msk dulseflingor</li>
+            </ul>
+
+            <h4>Gör så här:</h4>
+            <p>I en höghastighetsmixer, mixa alla ingredienser tills det är slätt. 
+            Om en tunnare konsistens önskas, tillsätt upp till 2,4 dl vatten. Njut!</p>
+          </div>
+        </section>
+
+        <section id="lunch">
+          <h2>Lunch</h2>
+
+          <div class="recept-card">
+            <img src="img/lunch1.jpg" alt="Potatissallad">
+            <h3>Potatissallad</h3>
+
+            <h4>Ingredienser:</h4>
+            <ul>
+              <li>960g potatis, skalad och tärnad</li>
+              <li>1 vitlöksklyfta, pressad</li>
+              <li>0,6 dl färsk persilja, grovhackad</li>
+              <li>2 msk knipplök, finhackad</li>
+              <li>1/2 tsk senapspulver</li>
+              <li>2 tsk färskpressad citron</li>
+            </ul>
+
+            <h4>Valfria tillbehör</h4>
+            <ul>
+              <li>1,2 dl rädisor, tunt skivade</li>
+              <li>1,2 dl gurka, tunt skivade</li>
+              <li>1,2 dl ångkokt eller rå sparris, hackad</li>
+            </ul>
+
+            <h4>Gör så här:</h4>
+            <p>Häll 10 cm vatten i en mellanstor kastrull. Koka upp vattnet och ställ i en ångkokningsinsats. Lägg i potatisen, sätt på locket och ångkoka i 5–10 minuter tills potatisen är mjuk. Häll över potatistärningarna i en skål och tillsätt vitlök, persilja, knipplök, senapspulver och färskpressad citron och rör om. Om du vill ha något eller några av de valfria tillbehören så rör i dem också.
+            Fördela i portionsskålar och servera.</p>
+          </div>
+        </section>
+
+        <section id="middag">
+          <h2>Middag</h2>
+
+          <div class="recept-card">
+            <img src="img/middag1.jpg" alt="Bönbollar i tomatsås med pasta">
+            <h3>Bönbollar</h3>
+
+            <h4>Ingredienser bönbollar:</h4>
+            <ul>
+              <li>3,6 dl kokta svarta bönor eller en burk på 450 ml, avrunna och sköljda</li>
+              <li>0,6 dl glutenfria havregryn</li>
+              <li>1,2 dl hackad lök</li>
+              <li>3 vitlöksklyftor, grovt hackade</li>
+              <li>2 msk tomatpuré</li>
+              <li>1/2 msk lökpulver</li>
+              <li>1 tsk paprika</li>
+              <li>1/2 tsk chilipulver (valfritt)</li>
+              <li>1/4 tsk röktt paprika</li>
+              <li>1/2 tsk mald spiskummin</li>
+              <li>1 tsk torkad oregano</li>
+              <li>Havssalt, efter smak (valfritt)</li>
+            </ul>
+            
+            <h4>Tomatsås</h4>
+            <ul>
+              <li>2,4 dl hackad lök</li>
+              <li>4 vitlöksklyftor, krossade eller hackade</li>
+              <li>14,4 dl krossade tomater</li>
+              <li>1,2 dl tomatpuré</li>
+              <li>2 tsk torkad basilika</li>
+              <li>2 tsk oregano</li>
+              <li>2 msk kokossocker</li>
+              <li>1 tsk röda paprikaflingor, efter smak (valfritt)</li>
+              <li>Havssalt, efter smak (valfritt)</li>
+              <li>2 förpackningar glutenfri, spannmålsfri spagetti</li>
+              <li>Färsk basilika eller persilja, till garnering</li>
+            </ul>
+
+            <h4>Gör så här:</h4>
+            <p>För att göra köttbullarna på svarta bönor, kombinera svarta bönor, havregryn, hackad lök, vitlök, tomatpuré, lökpulver, paprika, chilipulver (om du använder), rökt paprika, mald spiskummin, torkad oregano och havssalt (om du använder) i en matberedare och mixa tills det är slätt, skrapa ner sidorna efter behov.</p>
+            <p>Värm ugnen till 205°c.</p>
+            <p>Forma blandningen till bollar (du bör få cirka 14-16 st) och stek i en non-stick, ugnssäker stekpanna på medelhög värme tills den fått färg på alla sidor. För över stekpannan till ugnen eller flytta köttbullarna till en bakplåtspappersklädd plåt och grädda i 20 minuter tills de är frasiga.</p>
+            <p>Medan de svarta bönbullarna är i ugnen gör du tomatsåsen genom att sätta en non-stick kastrull på medelhög värme. Tillsätt löken och tillaga i 3-5 minuter, tills den är mjuk. Tillsätt vitlöken och tillaga i ytterligare 2 minuter. Tillsätt krossade tomater, tomatpuré, torkad basilika, torkad oregano, kokossocker, röda pepparflingor (om du använder) och havssalt (om du använder). Koka utan lock, i 5-7 minuter, tills det tjocknat något och smakerna har blandats.</p>
+            <p>Koka pastan enligt anvisningarna på förpackningen. Häll av och ställ åt sidan.</p>
+            <p>Lägg i bönbullarna i kastrullen och täck med sås.</p>
+            <p>När du ska servera, lägg den kokta spaghettin i en skål och toppa med köttbullar, sås och hackad färsk basilika eller persilja. Servera omedelbart.</p>
+            <p>4-6 portioner</p>
+          </div>
+        </section>
+
+       <section id="fika">
+          <h2>Fika</h2>
+
+          <div class="recept-card">
+            <img src="img/fika1.jpg" alt="Blåbärsmuffins">
+            <h3>Blåbärsmuffins</h3>
+
+            <h4>Ingredienser:</h4>
+            <ul>
+              <li>3 mogna bananer</li>
+              <li>0,6 dl lönnsirap</li>
+              <li>0,6 dl kokossocker</li>
+              <li>1 tsk alkoholfri vaniljextrakt, jag använder vaniljpulver i stället</li>
+              <li>1,2 dl osötad mandelmjölk, kan ersättas med vatten också för fettfri bakning</li>
+              <li>4,8 dl glutenfritt havremjöl, jag brukar ta 2,4 dl glutenfritt havremjöl och 2,4 dl glutenfria havregryn</li>
+              <li>1/2 tsk havssalt</li>
+              <li>1 tsk bakpulver</li>
+              <li>1/2 tsk bikarbonat</li>
+              <li>1,2 dl frysta vilda blåbär</li>
+            </ul>
+
+            <h4>Gör så här:</h4>
+              <p>Värm ugnen till 175 grader</p>
+              <p>Placera bananerna i en skål och mosa dem med en gaffel.</p>
+              <p>Tillsätt lönnsirap, kokossocker, vaniljextrakt/pulver och mandelmjölk/vatten. Blanda.</p>
+              <p>I en anna skål, blanda havremjölet/havregrynen, havssalt, bakpulver och bikarbonat. Blanda tills klumpfri.</p>
+              <p>Lägg i de våta ingredienserna och blanda varsamt tills du får en härlig smet. Tillsätt blåbären och blanda försiktigt.</p>
+              <p>Placera ut muffinsformar på en plåt och placera smeten där i, blir ca 12 st muffinsar.</p>
+              <p>Grädda i mitten av ugnen, kolla till dem efter 20-22 min då ugnarna kan skilja sig åt. 25 min brukar de dock få vara inne. När de är klara, lyft av dem från den varma plåten och låt de svalna lite innan ni hugger in!</p>
+          </div>
+        </section>
+
+        <section id="dryck">
+          <h2>Dryck</h2>
+
+          <div class="recept-card">
+            <img src="img/dryck1.jpg" alt="Sellerijuice">
+            <h3>Sellerijuice</h3>
+
+            <h4>Ingredienser:</h4>
+            <ul>
+              <li>2 buntar selleri</li>
+            </ul>
+
+            <h4>Gör så här:</h4>
+              <p>Skär av botten på selleribunten. Avlägsna blanden (kan ge en besk smak om man juicar), skölj rent stjälkarna.</p>
+              <p>Juica sellerin i en råsaftcentrifug eller mixer (sila igenom med finmaskig sil). Om du använder mixer, mixa och sila sedan genom en nötmjölkspåse eller finmaskig sil.</p>
+              <p>Sellerijuicen bör drickas på morgonen, 15-30 min efter citronvatten och 15-30 min innan smoothie eller annan frukost för bäst verkan.</p>
+              <p>Börja med liten mängd i början, jobba dig sedan uppåt för att kunna dricka ca 1 liter om dagen.</p>
+          </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Vänster -->
+        <div class="footer-left">
+          <ul>
+            <li><a href="#" id="about-link">Om mig</a></li>
+            <li><a href="#" id="contact-link">Kontakt</a></li>
+            <li><a href="https://www.medicalmedium.com/" target="_blank">MM</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Mitten -->
+        <div class="footer-center">
+            <p>Enkla och barnvänliga MM-recept för vardagen</p>
+        </div>
+
+        <!-- Höger -->
+        <div class="footer-right">
+         <ul>
+           <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+           <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+         </ul>
+        </div>
+
+    </footer>
+
+    <!-- Popup för Om mig -->
+    <div id="about-popup" class="popup hidden">
+      <div class="popup-content">
+       <button class="close" aria-label="Stäng popup">&times;</button>
+       <h2>Om mig</h2>
+       <p>Jag heter Jennie och har ett stort intresse för hälsa, familj och naturlig matlagning.
+       Den här sidan är skapad som en del av kursen Webbutveckling 1.</p>
+      </div>
+   </div>
+
+    <!-- Popup för Kontakt -->
+    <div id="contact-popup" class="popup hidden">
+     <div class="popup-content">
+      <button class="close" aria-label="Stäng popup">&times;</button>
+      <h2>Kontakt</h2>
+      <p>Du kan nå mig på e-post: 
+      <a href="mailto:jennie@example.com">jennie@example.com</a>
+      </p>
+     </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

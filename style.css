@@ -1,0 +1,324 @@
+html {
+  scroll-behavior: smooth; /* Mjuk scroll när man klickar i menyn */
+}
+
+/* Reset/mindre standardjusteringar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6fbf73; /* mild grön ton */
+  color: white;
+  padding: 1rem;
+}
+
+#menu-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  flex: 1;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  background: white;
+  color: #6fbf73;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+}
+
+#menu {
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+#menu.hidden {
+  display: none; /* JS visar/döljer */
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu li {
+  margin: 0.5rem 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+#menu a:hover {
+  color: #6fbf73;
+  font-weight: bold;
+}
+
+
+
+/* Behåll en fast höjd/bredd-balans */
+.slideshow-container {
+  width: 100%;
+  max-width: 700px;       
+  aspect-ratio: 16 / 9;   
+  margin: 1.5rem auto;
+  position: relative;
+  overflow: hidden;       
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* Bilderna fyller containern snyggt */
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.slideshow-container img.active {
+  display: block;
+  opacity: 1;
+}
+
+#slideshow h2 {
+  text-align: center;
+  color: #4e9151;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ---- Fritt från ---- */
+#frittfran {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#frittfran h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid-layout för rutorna */
+.frittfran-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Stil för varje ruta */
+.frittfran-grid div {
+  background-color: #fff;
+  border: 2px solid #6fbf73;
+  border-radius: 10px;
+  padding: 0.8rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.frittfran-grid div:hover {
+  background-color: #6fbf73;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+footer {
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #a7e3ac;
+}
+
+.footer-left ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+  margin: 0.5rem 0;
+}
+
+/* ---- Receptkort ---- */
+.recept-card {
+  background: #fdfdfd;
+  border: 1px solid #e0eee1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.recept-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.recept-card img {
+  width: 100%;
+  max-width: 400px;      /* Bilden blir aldrig större än 400px */
+  display: block;
+  margin: 0 auto 1rem;   /* Centrerar bilden */
+  border-radius: 10px;
+  aspect-ratio: 4 / 3;   /* Behåll proportioner */
+  object-fit: cover;     /* Beskär snyggt om det behövs */
+}
+
+/* Receptets rubrik */
+.recept-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Delrubriker (Ingredienser, Gör så här) */
+.recept-card h4 {
+  color: #6fbf73;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Listan över ingredienser */
+.recept-card ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Brödtexten (Gör så här) */
+.recept-card p {
+  line-height: 1.6;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Gör texten lite luftigare på mobil */
+@media (max-width: 600px) {
+  .recept-card {
+    padding: 1.2rem;
+    margin: 1.2rem;
+  }
+
+  .recept-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Styr footerns layut på mobil */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Centrera sektionstitlar som Frukost, Lunch osv. */
+section h2 {
+  text-align: center;
+  color: #4e9151;          
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;         
+}
+
+
+/* Popup – döljs från början */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Popup-rutan */
+.popup-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Stäng-knapp */
+.close {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Visa popup */
+.popup.show {
+  display: block;
+}
+
